@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+*, *:before, *:after{
+  box-sizing: border-box;
+}
+
+/* Chrome dark
+:root {
+  --main-border: #525252;
+  --main-bg-color: #202124;
+  --main-color-font: #bcc4cd;
+  --bg-light-gray: #292a2d;
+  --bg-title: #000000;
+  --color-font-button: #a5a5a5;
+} */
+
+/* Github Dark */
+:root {
+  --main-bg: rgba(13, 17, 23, 1.0);
+  --main-color-font-primary: rgba(196, 204, 213, 1.0);
+  --main-color-forn-secondary: rgba(139, 148, 157, 1.0);
+  --main-color-link: rgba(88, 166, 255, 1.0);
+  --main-color-bg-hover: rgba(22, 27, 34, 1.0);
+  --main-color-border: rgba(48, 54, 61, 1.0);
+  --button-color-bg: rgba(33, 38, 45, 1.0);
+  --button-color-bg-hover: rgba(48, 54, 61, 1.0);
+  --main-border-radius: 5px;
+  --color-red-border: rgba(108, 42, 43, 1.0);
+  --input-color-bg:rgba(7, 10, 16, 1.0);
+  --title-color-bg: rgba(22, 27, 35, 1.0);
+}
+
+body {
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  background-color: var(--main-bg);
+  color: var(--main-color-font-primary);
+}
+
+a:link, a:visited {
+  color: var(--main-color-link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+input {
+  border: 1px solid var(--main-color-border);
+  background-color: var(--input-color-bg);
+  border-radius: var(--main-border-radius);
+  margin: 3px;
+  padding: 0 10px;
+  height: 30px;
+  width: 400px;
+  color: var(--main-color-font-primary);
+}
+
+input::placeholder {
+  color: var(--main-color-forn-secondary);
+}
+
+label {
+  margin-right: 15px;
+}
+
+button {
+  background-color: var(--button-color-bg);
+  border: 1px solid var(--main-color-border);
+  border-radius: var(--main-border-radius);
+  height: 30px;
+  margin: 3px;
+  padding: 0 16px;
+  color: var(--main-color-font-primary);
+  font-weight: 500;
+  min-width: 70px
+}
+
+button:hover {
+  background-color: var(--button-color-bg-hover);
+}
+
+.green {
+  background-color: rgba(35, 134, 53, 1.0);
+  border: 1px solid rgba(37, 127, 64, 1.0);
+  color: white;
+}
+
+.green:hover {
+  background-color: rgba(45, 160, 68, 1.0);
+  border: 1px solid rgba(64, 184, 80, 1.0)
+}
+
+.red {
+  color: rgba(243, 80, 73, 1.0);
+}
+
+.red:hover {
+  border: 1px solid rgba(243, 80, 73, 1.0);
+  background-color: rgba(218, 55, 51, 1.0);
+  color: white;
+}
+
+.myForm {
+  /* outline: 1px dashed red; */
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  margin: 30px;
+}
+
+.wrapper {
+  /* outline: 1px dashed red; */
+  display: inline-block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper header {
+  display: flex;
+  justify-content: space-between;
+  /* outline: 1px dashed blue; */
+  padding: 20px;
+  border-bottom: 1px solid var(--main-color-border);
+}
+
+.wrapper main p {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  font-size: 5rem;
+  border-bottom: 1px solid var(--main-color-border);
+
+}
+
+.wrapper main > ul {
+  list-style: none;
+  margin-top: 50px;
+}
+
+.wrapper main > ul > li {
+  padding: 8px 0;
+  border-bottom: 1px dashed var(--main-color-border);
+}
+
+.wrapper main > ul > li:last-child {
+  border-bottom: none;
+}
+
+button:disabled {
+  color: var(--main-color-forn-secondary);
+  /* color: var(--main-color-forn-primary); */
+}
