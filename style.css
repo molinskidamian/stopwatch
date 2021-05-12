@@ -139,7 +139,13 @@ h2 {
   padding: 20px 0;
   font-size: 5rem;
   border-bottom: 1px solid var(--main-color-border);
+}
 
+.wrapper main p span {
+  /* outline: 1px dashed red; */
+  display: block;
+  text-align: center;
+  width: 120px;
 }
 
 .wrapper main > ul {
