@@ -88,17 +88,20 @@ const countTime = () => {
 
 btns[2].addEventListener('click', () => {
   if(time > 0 || secondsValue > 0) {
-    // btns[2].classList.add('red');
     minutes.textContent = '00';
-    minutes = 0;
+    minutesValue = 0;
     seconds.textContent = '00';
-    seconds = 0;
+    secondsValue = 0;
     miliseconds.textContent = '00';
-    miliseconds = 0;
-  } else {
-    // btns[2].classList.remove('red');
+    time = 0;
+    arrLaps.length = 0;
+
+    btns[1].style.display = "none";
+
+    const items = document.querySelectorAll('ul > li');
+
+    items.forEach(el => {
+      el.remove();
+    })
   }
-
-  console.log('2dsad');
-
 })
