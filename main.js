@@ -51,7 +51,8 @@ btns[1].addEventListener('click', function() {
     const df = document.createDocumentFragment();
 
     for(let i = 0; i < arrLaps.length; i++){
-      li.textContent = arrLaps[i];
+      // li.textContent = `${arrLaps[i]}`;
+      li.innerHTML = `<span class="lap-secondary">Lap ${i+1}:</span> ${arrLaps[i]}`;
       df.appendChild(li);
     }
 
@@ -86,7 +87,7 @@ const countTime = () => {
 }
 
 btns[2].addEventListener('click', () => {
-  if(miliseconds > 0 || minutes > 0) {
+  if(time > 0 || secondsValue > 0) {
     // btns[2].classList.add('red');
     minutes.textContent = '00';
     minutes = 0;

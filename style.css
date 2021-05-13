@@ -120,9 +120,9 @@ h2 {
   /* outline: 1px dashed red; */
   display: inline-block;
   position: fixed;
-  top: 50%;
+  top: 200px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
 }
 
 .wrapper header {
@@ -165,4 +165,9 @@ h2 {
 button:disabled {
   color: var(--main-color-forn-secondary);
   /* color: var(--main-color-forn-primary); */
+}
+
+.lap-secondary {
+  color: var(--main-color-forn-secondary);
+  font-size: .8rem;
 }
